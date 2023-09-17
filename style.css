@@ -63,4 +63,143 @@ input[name="switcher"] {
     display: none;
 }
 
+.mem-text-wrapper {
+    width: 60%;
+    overflow: hidden;
+}
+
+.mem-texts {
+    position: relative;
+    width: 500%;
+    height: 100%;
+    margin-right: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mem-text {
+    width: 100vw;
+    transition: 1s;
+}
+
+.mem-text-item {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: var #9696df;
+}
+
+.mem-content-switchers {
+    width: max-content;
+    display: flex;
+    align-self: flex-start;
+    gap: 0.1rem;
+}
+
+.mem-content-switcher{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.mem-content-switcher-btn {
+    width: 60%;
+    height: 60%;
+    background-color:#5d24b8;
+    border: 0;
+    border-radius: 50%;
+
+    transition: 1s;
+}
+
+
+#rb1:checked ~ .mem-content-switchers label:nth-child(1) .mem-content-switcher-btn,
+#rb2:checked ~ .mem-content-switchers label:nth-child(2) .mem-content-switcher-btn,
+#rb3:checked ~ .mem-content-switchers label:nth-child(3) .mem-content-switcher-btn,
+#rb4:checked ~ .mem-content-switchers label:nth-child(4) .mem-content-switcher-btn,
+
+
+
+.mem-content-switcher:hover .mem-content-switcher-btn {
+    transform: scale(1.1);
+    background-color: #acc21d;
+    border: 0.1rem solid #1c42cb;
+}
+
+#switcher1:checked ~ .mem-images-wrapper .mem {
+    transform: translateX(0%);
+}
+
+#switcher2:checked ~ .mem-images-wrapper .mem {
+    transform: translateX(-100%);
+}
+
+#switcher3:checked ~ .mem-images-wrapper .mem {
+    transform: translateX(-200%);
+}
+
+#switcher4:checked ~ .mem-images-wrapper .mem {
+    transform: translateX(-300%);
+}
+
+#switcher5:checked ~ .mem-images-wrapper .mem {
+    transform: translateX(-400%);
+}
+
+
+#switcher1:checked ~ .mem-images-wrapper {
+    background-color: rgb(185 208 188);
+    transition: 1s;
+}
+
+#switcher2:checked ~ .mem-images-wrapper {
+    background-color: rgb(69 71 57);
+    transition: 1s;
+}
+
+#switcher3:checked ~ .mem-images-wrapper {
+    background-color: rgb(186 197 226);
+    transition: 1s;
+}
+
+#switcher4:checked ~ .mem-images-wrapper {
+    background-color: rgb(68 153 60);
+    transition: 1s;
+}
+
+#switcher5:checked ~ .mem-images-wrapper {
+    background-color: rgb(186 197 226);
+    transition: 1s;
+}
+
+
+#switcher1:checked ~ .mem-text-wrapper .mem-text {
+    transform: translateX(0%);
+}
+
+#switcher2:checked ~ .mem-text-wrapper .mem-text {
+    transform: translateX(-100%);
+}
+
+#switcher3:checked ~ .mem-text-wrapper .mem-text {
+    transform: translateX(-200%);
+}
+
+#switcher4:checked ~ .mem-text-wrapper .mem-text {
+    transform: translateX(-300%);
+}
+
+#switcher5:checked ~ .mem-text-wrapper .mem-text {
+    transform: translateX(-400%);
+}
+
+
+
+.mem-content-switcher:active {
+    background-color: #1ccb33;
+    border-radius: 50%;
+    transform: translateY(0.2rem);
+}
 
