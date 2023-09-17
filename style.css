@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,10 +6,61 @@
 
 body {
     min-width: 100%;
-    background-color: #1ac851;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #1ccb33;
 }
 
-input[name="rb"] {
-    position:absolute;
-    visibility:hidden;
+
+
+.main-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 3rem 3rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    background-color: #408f59;
 }
+
+.mem-images-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #9696df;
+}
+
+.mem-images {
+    position: relative;
+    width: 500%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mem {
+    width: 100vw;
+    height: 32rem;
+    transition: 1s;
+}
+
+.mem-image {
+    display: block;
+    margin: auto;
+    width: auto;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+input[name="switcher"] {
+    display: none;
+}
+
+
