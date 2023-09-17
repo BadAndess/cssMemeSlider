@@ -9,17 +9,7 @@ body {
     background-color: #1ac851;
 }
 
-.slider {
-    width: 800px;
-    height: 400px;
-    overflow: hidden;
-    border: 10px solid #fff;
+input[name="rb"] {
+    position:absolute;
+    visibility:hidden;
 }
-
-.wrapper {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-

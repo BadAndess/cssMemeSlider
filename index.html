@@ -2,45 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Meme Slider</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Mem Slider</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/ico" href="./favicon.ico">
 </head>
 <body>
-    <div class="slider wrapper">
-        <div class="slides">
-            <input type="radio" name="rb" id="rb1" checked>
-            <input type="radio" name="rb" id="rb2">
-            <input type="radio" name="rb" id="rb3">
-            <input type="radio" name="rb" id="rb4">
 
-            <div class="slide s1"> <img src="./assets/img/mem1.png" class="mem mem1" alt="mem1"></div>
-            <div class="slide"> <img src="./assets/img/mem2.png" class="mem mem2" alt="mem2"></div>
-            <div class="slide"> <img src="./assets/img/mem3.png" class="mem mem3" alt="mem3"></div>
-            <div class="slide"> <img src="./assets/img/mem4.png" class="mem mem4" alt="mem4"></div>
-        </div>
+    <div class="main-container">
 
-        <div class="text-wrapper">
-            <div class="text">
-                <p class="text-item">Никто не идеален, кроме меня</p>
-            </div>
-            <div class="text">
-                <p class="text-item">Уничтожь, то что уничтожает тебя</p>
-            </div>
-            <div class="text">
-                <p class="text-item">Каждый человек видит мир по своему</p>
-            </div>
-            <div class="text">
-                <p class="text-item">Что бы ни происходило — всё хорошо</p>
+        <input checked type="radio" name="switcher" id="switcher1">
+        <input type="radio" name="switcher" id="switcher2">
+        <input type="radio" name="switcher" id="switcher3">
+        <input type="radio" name="switcher" id="switcher4">
+
+        <div class="mem-images-wrapper">
+            <div class="mem-images">
+                <div class="mem mem1"><img class="mem-image" src="./assets/img/mem1.png" alt="mem1"></div>
+                <div class="mem mem2"><img class="mem-image" src="./assets/img/mem2.png" alt="mem2"></div>
+                <div class="mem mem3"><img class="mem-image" src="./assets/img/mem3.png" alt="mem3"></div>
+                <div class="mem mem4"><img class="mem-image" src="./assets/img/mem4.png" alt="mem4"></div>
             </div>
         </div>
 
-        <div class="navigation">
-            <label for="rb1" class="switch"></label>
-            <label for="rb2" class="switch"></label>
-            <label for="rb3" class="switch"></label>
-            <label for="rb4" class="switch"></label>
+        <div class="mem-text-wrapper">
+            <div class="mem-texts">
+                <div class="mem-text">
+                    <p class="mem-text-item">Никто не идеален, кроме меня</p>
+                </div>
+                <div class="mem-text">
+                    <p class="mem-text-item">Уничтожь, то что уничтожает тебя
+                    </p>
+                </div>
+                <div class="mem-text">
+                    <p class="mem-text-item">Каждый человек видит мир по своему</p>
+                </div>
+                <div class="mem-text">
+                    <p class="mem-text-item">Что бы ни происходило — всё хорошо</p>
+                </div>
+            </div>
         </div>
+
+
+        <div class="mem-content-switchers">
+            <label for="switcher1" class="mem-content-switcher"><div class="mem-content-switcher-btn"></div></label>
+            <label for="switcher2" class="mem-content-switcher"><div class="mem-content-switcher-btn"></div></label>
+            <label for="switcher3" class="mem-content-switcher"><div class="mem-content-switcher-btn"></div></label>
+            <label for="switcher4" class="mem-content-switcher"><div class="mem-content-switcher-btn"></div></label>
+        </div>
+
     </div>
 </body>
 </html>
